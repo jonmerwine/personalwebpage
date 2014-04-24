@@ -1,0 +1,268 @@
+/*
+Name: Jon Merwine
+Project: Personal Web Page CSS stylesheet
+Date: April 2014
+
+- In this CSS file we ensure that the user is presented with a static block view of
+html code (2000px) while also taking advantage of absolute positioning to create dynamic
+animations.
+*/
+
+/*TAG CSS*/
+body {
+    height: 2000px;
+    overflow-y: hidden;
+    overflow-x: hidden; /* hides the horizontal scroll bar */
+}
+
+input {
+    resize: horizontal;
+    width: 150px;
+}
+
+input:active {
+    width: auto;
+}
+
+input:focus {
+    min-width: 150px;
+}
+
+/*ID CSS*/
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 50px;
+    line-height: 25px;
+    color: white;
+    border-color: floralwhite;
+    text-align: center;
+    border-width: medium;
+    background: -webkit-linear-gradient(left top, gray, slategray); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, gray, slategray); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, gray, slategray); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, gray, slategray); /* Standard syntax */
+}
+
+#start{
+    height: 1000px;
+    width: 1500px;
+    top: 2500px;
+    left: 9000px;
+    position: absolute;
+}
+
+#interests{
+    height: 1000px;
+    width: 1500px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+#about{
+    height: 1000px;
+    width: 1500px;
+    top: 2500px;
+    left: 0px;
+    position: absolute;
+}
+
+#contact{
+    height: 1000px;
+    width: 1500px;
+    top: 5000px;
+    left: 0px;
+    position: absolute;
+}
+
+#home{
+    height: 1000px;
+    width: 1500px;
+    top: 2500px;
+    left: 3000px;
+    position: absolute;
+}
+
+#professional{
+    height: 1000px;
+    width: 1500px;
+    top: 5000px;
+    left: 3000px;
+    position: absolute;
+}
+
+#aboutTable{
+    border-spacing: 200px 0;
+}
+
+#topdoor{
+    position:absolute;
+    left:8800px;
+    top:1400px;
+}
+
+#bottomdoor{
+    position:absolute;
+    left:8800px;
+    top:2900px;
+}
+
+#explore{
+    position:absolute;
+    left:9550px;
+    top:2770px;
+}
+
+#guitar{
+    position:absolute;
+    left:3050px;
+    top:2650px;
+}
+
+#computer{
+    position:absolute;
+    left:3450px;
+    top:2950px;
+}
+
+#contactMe{
+    position:absolute;
+    left:3520px;
+    top:2550px;
+}
+
+#lehigh{
+    position:absolute;
+    left:3010px;
+    top:2950px;
+}
+
+#email{
+    position:absolute;
+    left:650px;
+    top:5050px;
+    text-indent: 0px;
+}
+
+#brain{
+    position:absolute;
+    left:820px;
+    top:50px;
+    text-indent: 0px;
+}
+
+#bball2{
+    position:absolute;
+    left:600px;
+    top:70px;
+}
+
+#cv{
+    position:absolute;
+    left:3600px;
+    top:5100px;
+    text-indent: 0px;
+}
+
+#github{
+    position:absolute;
+    left:3800px;
+    top:5200px;
+}
+
+#linkedin{
+    position:absolute;
+    left:3550px;
+    top:5350px;
+}
+
+#phone{
+    position:absolute;
+    left:600px;
+    top:330px;
+    text-indent: 0px;
+    behavior:url(-ms-transform.htc);
+    /* Firefox */
+    -moz-transform:rotate(-20deg);
+    /* Safari and Chrome */
+    -webkit-transform:rotate(-20deg);
+}
+
+#info{
+    font-size: xx-large;
+    text-align: center;
+}
+
+#screen{
+    position:absolute;
+    left:900px;
+    top:2650px;
+}
+
+#community{
+    position:absolute;
+    left:580px;
+    top:2800px;
+}
+
+#tv{
+    position:absolute;
+    top: 2585px;
+    left: 833px;
+}
+
+#nextDiv{
+    position:absolute;
+    top: 2895px;
+    left: 140px;
+}
+
+#prevDiv{
+    position:absolute;
+    top: 2895px;
+    left: 90px;
+}
+
+/*CLASS CSS*/
+.btn{
+    background-color: gray;
+    color: white;
+    border-color: white;
+    border-width: medium;
+    height: 50px;
+    width: 70px;
+}
+
+.rel{
+    position: relative;
+}
+
+.text{
+    height: 400px;
+    width: 400px;
+    color: white;
+    background-color: black;
+    border:2px solid #FFFFFF;
+    padding:10px 20px;
+    background:#000000;
+    border-radius:25px;
+    box-shadow: 10px 10px 5px #888888;
+    font-family: Verdana;
+    text-align:justify;
+    text-justify:inter-word;
+}
+
+.centerImage{
+    display:block;
+    margin:auto;
+    border:2px solid #FFFFFF;
+    //border-radius:25px;
+}
+
+.btnForm {
+    width: 14.25em;  height: 2em;
+}

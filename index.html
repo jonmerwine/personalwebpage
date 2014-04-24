@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--
+Name: Jon Merwine
+Project: Personal Web Page index.html file
+Date: April 2014
+
+- This html page is broken down into a grid of 1500x1000px blocks each assigned by a <div> tag.
+Each <div> represents a different section of the web page, this design was chosen to incorporate an
+outer space theme to the web page.
+-->
+
+<html>
+    <head>
+        <title>Jon's Personal Web Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <link type='text/css' href='styles.css' rel='stylesheet'/>
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script src="scripts.js"></script>
+    </head>
+
+    <body background="images/stars.png">
+
+        <div id='header'>
+            <button class='btn' id='homeClick'>Home</button>
+            <button class='btn' id='aboutClick'>About</button>
+            <button class='btn' id='interestsClick'>Interests</button>
+            <button class='btn' id='professionalClick'>Portfolio</button>
+            <button class='btn' id='contactClick'>Contact</button>
+        </div>
+
+        <div id="start">
+
+        </div>
+
+        <div id='interests'>
+            <br><br>
+            <table cellpadding='20'>
+                <tr>
+                    <td>
+                        <div class='text'>
+                            <h1 style="margin-bottom:0;">MY INTERESTS</h1>
+                            <p>Among my greatest interests are computer science, sports, music, and philosophy.
+                                I love mobile computing and Coding for Good. My favorite genres of music are
+                                Classic Rock and Metal. Basketball is one of my favorite hobbies and I try to play as much as I can.
+                                I love to look at the world from as many perspectives as I can and I find that pensive thought and
+                                philosophical reflection help me to do so.</p>
+                        </div>
+                    </td>
+                    <td>
+                        <br><br><br><br><br>
+                        <div>
+                            <img id='metal' width='600' height='200' class='rel' src='images/metal.png'>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id='about'>
+            <br><br>
+            <table cellpadding='20'>
+                <tr>
+                    <td>
+                        <div id="cont">
+                            <div id='about1' class='text'>
+                                <h1 style="margin-bottom:0;">ABOUT ME</h1>
+                                <ul>
+                                    <li id='info1'><p>My name is Jon Merwine</p></li>
+                                    <li id='info2'><p >I am currently a Master's student at Lehigh University in the field of
+                                            Computer Science</p></li>
+                                    <li id='info3'><p>I am a Head Gryphon (Head Resident Assistant) at Lehigh</p></li>
+                                    <li id='info4'><p>I am the founder and leader of the Coding the Future Live Lehigh community</p></li>
+                                    <li id='info5'><p>I am seeking a career in computer science that will utilize my Master's focus</p></li>
+                                    <p id='info6'>More...<p>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id='contact'>
+            <br><br>
+            <table cellpadding='100' cellspacing="50">
+                <tr>
+                    <td>
+                        <div class='text' style='width:400px;'>
+                            <div>
+                                <h1 style="margin-bottom:0;">CONTACT ME</h1>
+                            </div>
+                            <br><br>
+                            <div style="height:350px;width:200px;float:left;">
+                                <form action="MAILTO:lurunnerguy@gmail.com" method="post" enctype="text/plain">
+                                    Name:<br>
+                                    <input type="text" name="name" value=""><br>
+                                    E-mail:<br>
+                                    <input type="text" name="mail" value=""><br>
+                                    Comment:<br>
+                                    <input type="text" name="comment" value="" size="50"><br><br>
+                                    <input type="submit" class="btnForm" id="sub" value="                 Send                ">
+                                    <input type="reset" class="btnForm" value="                 Reset                ">
+                                </form>
+                            </div>
+                            <div style="height:350px;width:200px;float:left;">
+                                Email:<br>
+                                lurunnerguy@gmail.com<br><br>
+                                Skype:<br>
+                                Jon Merwine
+                                <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
+                                <div id="SkypeButton_Call_jmerwine_1">
+                                    <script type="text/javascript">
+                                        Skype.ui({
+                                            "name": "chat",
+                                            "element": "SkypeButton_Call_jmerwine_1",
+                                            "participants": ["jmerwine"]
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+
+                            <div style="clear:both;text-align:center;">
+
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img id='world' class='rel' src='images/world.png'>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id='home'>
+            <br><br>
+            <table cellspacing="100">
+                <tr>
+                    <td>
+                        <br><br>
+                        <div>
+                            <img id='galaxy' class='rel' src='images/galaxy.gif'>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="homeInfo" class='text'>
+                            <h1 style="margin-bottom:0;">WELCOME!</h1>
+                            <p>My name is Jon Merwine and this is my personal web page!</p>
+                            <p>Please explore at your leisure, either navigate using the bar at the top of
+                                your screen or click an image to fly to your next destination</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id='professional'>
+            <br><br>
+            <table cellpadding='20'>
+                <tr>
+                    <td>
+                        <br><br><br><br><br>
+                        <div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class='text'>
+                            <h1 style="margin-bottom:0;">PORTFOLIO</h1>
+                            <p>Please explore my projects, CV, and leadership in the field of Computer Science.</p>
+                            <ul>
+                                <li>Click the CV image to check out my updated resume.</li>
+                                <br>
+                                <li>Click the Github icon to see some of my projects and the code behind them.</li>
+                                <br>
+                                <li>Click the LinkedIn icon to view my page on its site.</li>
+                            </ul>
+
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <p id="dia">
+            <embed
+                width="420" height="345"
+                src="https://www.youtube.com/v/CD-E-LDc384"
+                type="application/x-shockwave-flash">
+        </p>
+        <p id="resume">
+            <object data="images/Vitae.pdf" type="application/pdf" height="100%" width="100%">
+
+                <p>It appears you don't have a PDF plugin for this browser.
+                    No biggie... you can <a href="images/Vitae.pdf">click here to
+                        download the PDF file.</a></p>
+
+            </object>
+        </p>
+
+        <!-- Animated images positioned absolutely on the web page -->
+        <img id="topdoor" src="images/topdoor.png">
+        <img id="bottomdoor" src="images/bottomdoor.png">
+        <img id="explore" src="images//explore.png">
+        <img id="tv" src='images/tv.png'>
+        <img id="screen" class="centerImage" src='images/whitenoise.gif'>
+        <img id="guitar" src="images/guitar.png">
+        <img id="computer" src="images/computer.png">
+        <img id="contactMe" src="images/contactMe.png">
+        <img id="bball2" src="images/bball.png">
+        <img id="lehigh" src="images/lehigh.png">
+        <img id="email" src="images/email.png">
+        <img id="brain" src="images/brain.png">
+        <img id="phone" src="images/phone.png">
+        <img id="cv" style="opacity: 0.7;" src="images/cv.png">
+        <img id="github" style="opacity: 0.7;" src="images/github.png">
+        <img id="linkedin" style="opacity: 0.7;" src="images/linkedin.png">
+        <img id="nextDiv" style="opacity: 0.7;" src="images/nextDiv.svg">
+        <img id="prevDiv" style="opacity: 0.7;" src="images/prevDiv.svg">
+        <img id="community" style="opacity: 0.7;" src="images/community.png">
+    </body>
+</html>
