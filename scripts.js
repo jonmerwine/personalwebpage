@@ -451,6 +451,11 @@ $(document).ready(function()
         window.open("https://github.com/jonmerwine");
     });
 
+    $("#brain").click(function()
+    {
+        window.open("http://www.multivax.com/last_question.html");
+    });
+
     $("#lehigh").click(function()
     {
         $("#aboutClick").trigger("click");
